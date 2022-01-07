@@ -12,4 +12,4 @@ We will refine the data for the most recent survey year (2018), which indicates 
 
 We will divide 80% of the data into a “training" section. We will then use the remaining 20% for the “test” section of data. 
 
-The input layer will be comprised of 148 variables fed to a neuron. These neurons will connect to a 100-neuron hidden layer. Finally, the output layer will consist of five categories (in accordance with the survey question structure): voted Trump, voted Hillary Clinton, Voted Other, Did not Vote, and Not Sure. 
+The input layer will be comprised of 148 variables fed to a neuron. These neurons will connect to a 100-neuron hidden layer. Finally, the output layer will consist of five categories (in accordance with the survey question structure): voted Trump, voted Hillary Clinton, Voted Other, Did not Vote, and Not Sure/Don't Recall. 
