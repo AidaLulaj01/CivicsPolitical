@@ -7,7 +7,7 @@ Kuriwaki, Shiro complied voter survey data in .Rds file format for the years 200
 
 The data was drawn from Cooperative Congressional Election Study (CCES), one of the most comprehensive political surveys in the US.
 
-The data set is divided then joined along the following parameters from the CSV:
+The data set is divided then joined along the following parameters from the CSV:   
 
 A-AV --> Voter_information
 AC -->AB-AC-->Ideological Leaning
