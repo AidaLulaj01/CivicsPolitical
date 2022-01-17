@@ -11,6 +11,9 @@ The data set is divided then joined along the following parameters from the CSV:
 
 A-AV --> Voter_information
 AC -->AB-AC-->Ideological Leaning
+E-T --> Location_info/District_info
+U-AC-->Ideological Information
+
 
 
 We will refine the data for the most recent survey year (2018), which indicates presidential choice for 2016. We will first use R and then translate the data in Python for the purpose of using Jupyter. Afterwards, we will use machine learning (start with a random forest method) to develop a predictive model for presidential choice. 
