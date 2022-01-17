@@ -22,6 +22,6 @@ We will refine the data for the most recent survey year of 2018, which holds 60,
  
 State, district, cong., geography, gender, birthyear, age, education, race, family income, marital status, news interests, ideology, and presidential vote for 2016. Since the database contains a lot of features with categorical data,  then one-hot encode those variables into dummy sets (Using the dummy_cols and fastDummies packages). 
 
-We will divide 80% of the data into a “training" section. We will then use the remaining 20% for the “test” section of data. 
+After the features have been given a numeric value, the output features which is the 2016 presidential vote will be removed from the dataframe. The data is separated into training and test sets, the model is then trained.
 
 The input layer will be comprised of 148 variables fed to a neuron. These neurons will connect to a 100-neuron hidden layer. Finally, the output layer will consist of five categories (in accordance with the survey question structure): voted Trump, voted Hillary Clinton, Voted Other, Did not Vote, and Not Sure/Don't Recall. 
