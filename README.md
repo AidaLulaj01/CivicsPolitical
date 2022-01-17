@@ -1,7 +1,13 @@
 # CivicsPolitical
 CU_FinalProject
 
+
+## Introduction
+
 Do social characteristics and behavior predict presidential voter choice? We propose the following analysis to find out. We selected this topic because in a politically polarized society, understanding underlying drivers for political decisions may be useful in bringing about a more balanced and cooperative political culture.
+
+
+## Data source
 
 Kuriwaki, Shiro complied voter survey data in .Rds file format for the years 2006–2018. The dataframe contains 452,755 rows (observations) and 73 columns (features), including geographic, demographic, economic, news interest, political affinity, and presidential choice variables.
 
@@ -16,7 +22,8 @@ U-AC-->Ideological Information
 AW-->Voter_opinion/choice
 BH-BK-->Candidate_info
 
-Data Exploration and preprocessing:
+
+## Data Exploration, preprocessing, and methodology
 
 We will refine the data for the most recent survey year of 2018, which holds 60,000 rows and 93 features. The data pertains to voter information, ideological leaning, voter opinion, and candidate information. For the machine learning model, we will be using the following features in a dataframe:
  
