@@ -24,4 +24,10 @@ State, district, cong., geography, gender, birthyear, age, education, race, fami
 
 After the features have been given a numeric value, the output features which is the 2016 presidential vote will be removed from the dataframe. The data is separated into training and test sets, the model is then trained.
 
-For the input layer of the model, the activation function is ReLu (Rectified Linear Unit) since this is a category classification, it will be comprised of 148 variables fed to a neuron. For the hidden layer the activation function that was used is softmax. For compiling and training the model, the optimizer algorithm used is adam and the loss function that is used is sparse categorical crossentropy. The model will also have 20% of its training data for the model to iteratively calculate validation errors. 500 epochs are chosen for lastly the algorithm will stop if the test model performance doesn’t increase for 20 continuous epochs. The output layer will consist of five categories (in accordance with the survey question structure): voted Trump, voted Hillary Clinton, Voted Other, Did not Vote, and Not Sure/Don't Recall. 
+Layers:
+
+For the input layer of the model, the activation function is ReLu (Rectified Linear Unit) since this is a category classification, it will be comprised of 148 variables fed to a neuron. 
+
+For the hidden layer the activation function that was used is softmax. For compiling and training the model, the optimizer algorithm used is adam and the loss function that is used is sparse categorical crossentropy. The model will also have 20% of its training data for the model to iteratively calculate validation errors. 500 epochs are chosen for lastly the algorithm will stop if the test model performance doesn’t increase for 20 continuous epochs. 
+
+The output layer will consist of five categories (in accordance with the survey question structure): voted Trump, voted Hillary Clinton, Voted Other, Did not Vote, and Not Sure/Don't Recall. 
