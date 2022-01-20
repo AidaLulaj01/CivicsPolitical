@@ -1,6 +1,4 @@
 # CivicsPolitical
-CU_FinalProject
-
 
 ## Introduction
 
@@ -13,19 +11,15 @@ Kuriwaki, Shiro complied voter survey data in .Rds file format for the years 200
 
 The data was drawn from Cooperative Congressional Election Study (CCES), one of the most comprehensive political surveys in the US.
 
-The data set is divided then joined along the following parameters from the CSV:   
+The data set is divided then joined along the following parameters from the CSVs(find the files into the DATA folder):   
 
-A-AV --> Voter_information
-AC -->AB-AC-->Ideological Leaning
-E-T --> Location_info/District_info
-U-AC-->Ideological Information
-AW-->Voter_opinion/choice
-BH-BK-->Candidate_info
+## Database Entity Relationship Diagram (ERD)
+![ERD](./DB/ERD.png)
 
 
 ## Data Exploration, preprocessing, and methodology
 
-We will refine the data for the most recent survey year of 2018, which holds 60,000 rows and 93 features. The data pertains to voter information, ideological leaning, voter opinion, and candidate information. For the machine learning model, we will be using the following features in a dataframe:
+We will refine the data for the most recent survey year of 2018, which holds 60,000 rows and 93 features. The data pertains to voter information, ideological leaning, voter opinion, district information and candidate information. For the machine learning model, we will be using the following features in a dataframe:
  
 State, district, cong., geography, gender, birthyear, age, education, race, family income, marital status, news interests, ideology, and presidential vote for 2016. Since the database contains a lot of features with categorical data,  then one-hot encode those variables into dummy sets (Using the dummy_cols and fastDummies packages). 
 
