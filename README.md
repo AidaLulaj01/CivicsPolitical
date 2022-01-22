@@ -30,8 +30,6 @@ The remaining data is then separated into the training set which will have about
 
 ## Machine Learning Model:
 
-The output layer will consist of five categories (in accordance with the survey question structure): voted Trump, voted Hillary Clinton, Voted Other, Did not Vote, and Not Sure/Don't Recall. 
-
 ### Neural Network Pros & Cons
 
 Neural networks form the basis of DL, and applications are enormous for DL, ranging from voice recognition to cancer detection. The pros and cons of neural networks are described in this section. The pros outweigh the cons and give neural networks as the preferred modeling technique for data science, machine learning, and predictions.
