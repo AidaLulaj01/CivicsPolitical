@@ -13,22 +13,27 @@ The data was drawn from Cooperative Congressional Election Study (CCES), one of 
 
 The data set is divided then joined along the following parameters from the CSVs(find the files into the DATA folder):   
 
-## Database Entity Relationship Diagram (ERD)
+### Database Entity Relationship Diagram (ERD)
 ![ERD](./DB/ERD.png)
 
 
-## Data Exploration, preprocessing, and methodology
 
-We will refine the data for the most recent survey year of 2018, which holds 60,000 rows and 93 features. The data pertains to voter information, ideological leaning, voter opinion, district information and candidate information. For the machine learning model, we will be using the following features in a dataframe:
- 
-State, district, cong., geography, gender, birthyear, age, education, race, family income, marital status, news interests, ideology, and presidential vote for 2016. Since the database contains a lot of features with categorical data,  then one-hot encode those variables into dummy sets (Using the dummy_cols and fastDummies packages). 
+## Data Exploration
 
-After the features have been given a numeric value, the output features which is the 2016 presidential vote will be removed from the dataframe. The data is separated into training and test sets, the model is then trained.
+The dataframe contains election survey data going back to the year 2006. For the neural analysis we will be focusing on the year 2018, it holds 60,000 rows and 93 features. Most of the data pertains to voter information, ideological leaning, voter opinion, candidate information, voter choice. 
 
-Layers:
+First the dataframe is filtered to the year 2018 and then the following variables 
+For the neural analysis we will be using the following features in a new dataframe: state, district, congress (cong), year of birth (birthyr), age, education (educ), race, family income (faminc), marital status (marstat), news interest (newsint), presidential approval (approval_pres), ideology (ideo5), and lastly presidential vote (voted_pres_16). These features help assess the demographic of the voters.  
 
-For the input layer of the model, the activation function is ReLu (Rectified Linear Unit) since this is a category classification, it will be comprised of 148 variables fed to a neuron. 
+The features that are chosen are mostly categorical, so they are then turned into numeric vectors by one-hot encode. Since we want the model to predict voter’s presidential preference, the feature voted_press16 is removed from the dataframe. Note, that the voted_press16 feature consists of five categories (in accordance with the survey question structure): Voted Trump, Voted Hillary Clinton, Voted Other, Did Not Vote, and Not Sure/Don't Recall.
+The remaining data is then separated into the training set which will have about 90% of data and the test set will have about 10% of the data. 
 
-For the hidden layer the activation function that was used is softmax. For compiling and training the model, the optimizer algorithm used is adam and the loss function that is used is sparse categorical crossentropy. The model will also have 20% of its training data for the model to iteratively calculate validation errors. 500 epochs are chosen for lastly the algorithm will stop if the test model performance doesn’t increase for 20 continuous epochs. 
+## Machine Learning Model:
 
-The output layer will consist of five categories (in accordance with the survey question structure): voted Trump, voted Hillary Clinton, Voted Other, Did not Vote, and Not Sure/Don't Recall. 
+For a classification model like this the Keras sequential model is used. This model is used for the task because of its simplicity to design neural networks and minimal user action. The input layer will have 12 neurons to go hand in hand with the number of features. The first activation stage will use ReLu (Rectified Linear Unit), this activation function is mostly used nowadays due to being a non-linear function and infinite gradient. The hidden layer will have 7 neurons for rule of thumb. The second activation layer will be Softmax, since the output layer will have 5 neurons due to the categorical responses in the feature. Softmax is used because it helps normalize the output and enforce it to be in a limited range. 
+
+The defined model is now compiled with the following parameters:
+Optimizer parameter is adam, used due to the volume of rows with each feature.
+Loss parameter is sparse_categorical_crossentropy.
+
+Twenty percent of the training set is then used to calculate the validation error of the model training. Now the model is fit with 500 epochs to run the algorithm and will only stop if performance doesn’t increase for 20 continuous epochs.
