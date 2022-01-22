@@ -32,7 +32,7 @@ The remaining data is then separated into the training set which will have about
 
 The output layer will consist of five categories (in accordance with the survey question structure): voted Trump, voted Hillary Clinton, Voted Other, Did not Vote, and Not Sure/Don't Recall. 
 
-**Neural Network Pros & Cons**
+### Neural Network Pros & Cons**
 
 Neural networks form the basis of DL, and applications are enormous for DL, ranging from voice recognition to cancer detection. The pros and cons of neural networks are described in this section. The pros outweigh the cons and give neural networks as the preferred modeling technique for data science, machine learning, and predictions.
 
@@ -49,3 +49,13 @@ Neural networks work best with more data points.
 Neural networks are black boxes, meaning we cannot know how much each independent variable is influencing the dependent variables.
 It is computationally very expensive and time consuming to train with traditional CPUs.
 Neural networks depend a lot on training data. This leads to the problem of over-fitting and generalization. The mode relies more on the training data and may be tuned to the data.
+
+### Explanation of the model
+
+For a classification model like this the Keras sequential model is used. This model is used for the task because of its simplicity to design neural networks and minimal user action. The input layer will have 12 neurons to go hand in hand with the number of features. The first activation stage will use ReLu (Rectified Linear Unit), this activation function is mostly used nowadays due to being a non-linear function and infinite gradient. The hidden layer will have 7 neurons for rule of thumb. The second activation layer will be Softmax, since the output layer will have 5 neurons due to the categorical responses in the feature. Softmax is used because it helps normalize the output and enforce it to be in a limited range. 
+
+The defined model is now compiled with the following parameters:
+Optimizer parameter is adam, used due to the volume of rows with each feature.
+Loss parameter is sparse_categorical_crossentropy.
+
+Twenty percent of the training set is then used to calculate the validation error of the model training. Now the model is fit with 500 epochs to run the algorithm and will only stop if performance doesn’t increase for 20 continuous epochs.
