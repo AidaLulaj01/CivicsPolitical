@@ -32,3 +32,23 @@ For the input layer of the model, the activation function is ReLu (Rectified Lin
 For the hidden layer the activation function that was used is softmax. For compiling and training the model, the optimizer algorithm used is adam and the loss function that is used is sparse categorical crossentropy. The model will also have 20% of its training data for the model to iteratively calculate validation errors. 500 epochs are chosen for lastly the algorithm will stop if the test model performance doesn’t increase for 20 continuous epochs. 
 
 The output layer will consist of five categories (in accordance with the survey question structure): voted Trump, voted Hillary Clinton, Voted Other, Did not Vote, and Not Sure/Don't Recall. 
+
+
+Neural Network Pros & Cons
+
+Neural networks form the basis of DL, and applications are enormous for DL, ranging from voice recognition to cancer detection. The pros and cons of neural networks are described in this section. The pros outweigh the cons and give neural networks as the preferred modeling technique for data science, machine learning, and predictions.
+
+Pros
+The following are some of the advantages of neural networks:
+
+Neural networks are flexible and can be used for both regression and classification problems. Any data which can be made numeric can be used in the model, as neural network is a mathematical model with approximation functions.
+Neural networks are good to model with nonlinear data with large number of inputs; for example, images. It is reliable in an approach of tasks involving many features. It works by splitting the problem of classification into a layered network of simpler elements.
+Once trained, the predictions are pretty fast.
+Neural networks can be trained with any number of inputs and layers.
+Neural networks work best with more data points.
+Cons
+Let us take a look at some of the cons of neural networks:
+
+Neural networks are black boxes, meaning we cannot know how much each independent variable is influencing the dependent variables.
+It is computationally very expensive and time consuming to train with traditional CPUs.
+Neural networks depend a lot on training data. This leads to the problem of over-fitting and generalization. The mode relies more on the training data and may be tuned to the data.
