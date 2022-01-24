@@ -72,5 +72,5 @@ Twenty percent of the training set is then used to calculate the validation erro
 
 
 
-!(fig2)[https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig2.png]
+![fig2](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig2.png)
 
