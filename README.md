@@ -77,7 +77,7 @@ Looking at the employment status of voters, we can see that the people that vote
 
 
 
-Age vs. Ideology
+#### Age vs. Ideology
 
 ![fig1](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig1.png)
 
@@ -85,7 +85,7 @@ This figure shows the average age of people voting for each ideology. We can see
 
 
 
-Race vs. President Approval
+#### Race vs. President Approval
 
 ![fig2](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig2.png)
 
