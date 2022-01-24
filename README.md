@@ -61,12 +61,15 @@ Twenty percent of the training set is then used to calculate the validation erro
 
 ### Analysis
 
+Voter Choice
+
 ![fig3](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig3.png)
 
 In this figure, we can see from our data that the largest share of voters, approximately 22,000 people, voted for Hilary Clinton. The second largest share of voters, approximately 19,800 people, voted for Donald Trump. Approximately 4,500 people voted for someone else other than Clinton or Trump, and less than 1,000 people did not vote. Unfortunately, a considerable portion of the data is Not Available. 
 
 
 
+Employment
 
 ![fig4](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig4.png)
 
@@ -74,6 +77,7 @@ Looking at the employment status of voters, we can see that the people that vote
 
 
 
+Age vs. Ideology
 
 ![fig1](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig1.png)
 
@@ -81,6 +85,7 @@ This figure shows the average age of people voting for each ideology. We can see
 
 
 
+Race vs. President Approval
 
 ![fig2](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig2.png)
 
