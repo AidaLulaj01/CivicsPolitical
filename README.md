@@ -67,15 +67,18 @@ In this figure, we can see from our data that the largest share of voters, appro
 
 
 
+
 ![fig4](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig4.png)
 
 Looking at the employment status of voters, we can see that the people that voted the most were full-time eployees and retired people. Part-time workers and homemeakers ranked third and fourth, respectively. It is interesting to note that students and unemployed people have very low voting rates. This indicates that future analysis might be done to determine why certain demographics have lower voting turounout.
 
 
 
+
 ![fig1](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig1.png)
 
 This figure shows the average age of people voting for each ideology. We can see that the average age of Very Conservative and Conservative voters is 55 and 53, respectively, which also seem to be the older people from our dataset. We can also observe that the younger people are, the more likely they are to be Not Sure regarding their ideology, Liberal, and Very Liberal. The average age of Moderate voters falls, as expected, between the averageage of Liberal and Conservative voters.
+
 
 
 
