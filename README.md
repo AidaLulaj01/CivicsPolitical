@@ -23,7 +23,7 @@ The data set is divided then joined along the following parameters from the CSVs
 The dataframe contains election survey data going back to the year 2006. For the neural analysis we will be focusing on the year 2018, it holds 60,000 rows and 93 features. Most of the data pertains to voter information, ideological leaning, voter opinion, candidate information, voter choice. 
 
 First the dataframe is filtered to the year 2018 and then the following variables 
-For the neural analysis we will be using the following features in a new dataframe: state, gender, age, education (educ), race, family income (faminc), employ, marital status (marstat), news interest (newsint), presidential approval (approval_pres), ideology (ideo5), and lastly presidential vote (voted_pres_16). These features help assess the demographic of the voters.  
+For the neural analysis we will be using the following features in a new dataframe: state, district, congress (cong), year of birth (birthyr), age, education (educ), race, family income (faminc), marital status (marstat), news interest (newsint), presidential approval (approval_pres), ideology (ideo5), and lastly presidential vote (voted_pres_16). These features help assess the demographic of the voters.  
 
 The features that are chosen are mostly categorical, so they are then turned into numeric vectors by one-hot encode. Since we want the model to predict voter’s presidential preference, the feature voted_press16 is removed from the dataframe. Note, that the voted_press16 feature consists of five categories (in accordance with the survey question structure): Voted Trump, Voted Hillary Clinton, Voted Other, Did Not Vote, and Not Sure/Don't Recall.
 The remaining data is then separated into the training set which will have about 90% of data and the test set will have about 10% of the data. 
@@ -58,19 +58,24 @@ Loss parameter is sparse_categorical_crossentropy.
 
 Twenty percent of the training set is then used to calculate the validation error of the model training. Now the model is fit with 500 epochs to run the algorithm and will only stop if performance doesn’t increase for 20 continuous epochs.
 
+
 ### Analysis
 
 ![fig3](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig3.png)
 
+In this figure, we can see from our data that the largest share of voters, approximately 22,000 people, voted for Hilary Clinton. The second largest share of voters, approximately 19,800 people, voted for Donald Trump. Approximately 4,500 people voted for someone else other than Clinton or Trump, and less than 1,000 people did not vote. Unfortunately, a considerable portion of the data is Not Available. 
 
 
 ![fig4](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig4.png)
 
+Looking at the employment status of voters, we can see that the people that voted the most were full-time eployees and retired people. Part-time workers and homemeakers ranked third and fourth, respectively. It is interesting to note that students and unemployed people have very low voting rates. This indicates that future analysis might be done to determine why certain demographics have lower voting turounout.
 
 
 ![fig1](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig1.png)
 
+This figure shows the average age of people voting for each ideology. We can see that the average age of Very Conservative and Conservative voters is 55 and 53, respectively, which also seem to be the older people from our dataset. We can also observe that the younger people are, the more likely they are to be Not Sure regarding their ideology, Liberal, and Very Liberal. The average age of Moderate voters falls, as expected, between the averageage of Liberal and Conservative voters.
 
 
 ![fig2](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig2.png)
 
+In this image, we can see the approval of the president based on each race.
