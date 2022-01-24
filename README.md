@@ -57,3 +57,20 @@ Optimizer parameter is adam, used due to the volume of rows with each feature.
 Loss parameter is sparse_categorical_crossentropy.
 
 Twenty percent of the training set is then used to calculate the validation error of the model training. Now the model is fit with 500 epochs to run the algorithm and will only stop if performance doesn’t increase for 20 continuous epochs.
+
+### Analysis
+
+!fig3[https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig3.png]
+
+
+
+!fig4[https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig4.png]
+
+
+
+!fig1[https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig1.png]
+
+
+
+!fig2[https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig2.png]
+
