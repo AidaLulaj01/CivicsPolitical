@@ -50,10 +50,19 @@ Neural networks depend a lot on training data. This leads to the problem of over
 
 This type of analysis gears towards a classification model, we used the Keras sequential model. This model is used for the task because of its simplicity to design a neural network and minimal user action. The input layer will contain the features that have been used to train the model. To get a better accuracy we will use two hidden layers with activation function Relu (Rectified Linear Unit). ReLu is used due to its simplicity compared to other activation functions, it also takes into account the non-linear relationship between the features selected. To follow suit with another neural analysis that inspired this analysis the first hidden layer will have 148 neurons and the second hidden layer will have 100 neurons. The output layer used was the sigmoid activation function we are trying to predict whether a voter chose one president over another. 
 
+<img width="562" alt="Screen Shot 2022-01-25 at 10 59 42 PM" src="https://user-images.githubusercontent.com/88690258/151101814-d69d926f-5d76-464b-a857-6f044725e992.png">
+
+
+
 The defined model is now compiled with the following parameters:
 Optimizer parameter is adam, used due to the volume of data rows within each feature.
 Loss parameter is sparse_categorical_crossentropy because this is a binary classification model after the preprocessing stage. 
 The model is then trained, traditionally neural networks have a high number of epochs, for this analysis we chose 500 epochs to see if we can get a higher accuracy score. Afterwards the model is evaluated, and the loss percentage was 2.22 with an accuracy of 90.4%.  
+
+<img width="621" alt="Screen Shot 2022-01-25 at 10 58 34 PM" src="https://user-images.githubusercontent.com/88690258/151101751-02d0ff74-ee9d-496c-b84c-1f14acdaf72e.png">
+
+
+
 
 ### Analysis
 
