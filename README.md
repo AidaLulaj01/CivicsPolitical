@@ -69,8 +69,7 @@ The model is then trained, traditionally neural networks have a high number of e
 
 <img width="621" alt="Screen Shot 2022-01-25 at 10 58 34 PM" src="https://user-images.githubusercontent.com/88690258/151101751-02d0ff74-ee9d-496c-b84c-1f14acdaf72e.png">
 
-
-
+With this return value the model does a fairly good job of predicting voter preference. This is taking into regards that the outcome column “voted_pres_16” was manipulated into unique values if the surveyor voted for one president or other. Originally the database contained many categorical answers which would make fitting into the machine learning model more difficult.  This is a simple model compared to what organizations in the political sphere and thinktanks would use for voter prediction. 
 
 ### Analysis
 
@@ -86,7 +85,7 @@ In this figure, we can see from our data that the largest share of voters, appro
 
 ![fig4](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig4.png)
 
-Looking at the employment status of voters, we can see that the people that voted the most were full-time eployees and retired people. Part-time workers and homemeakers ranked third and fourth, respectively. It is interesting to note that students and unemployed people have very low voting rates. This indicates that future analysis might be done to determine why certain demographics have lower voting turounout.
+Looking at the employment status of voters, we can see that the people that voted the most were full-time employees and retired people. Part-time workers and homemakers ranked third and fourth, respectively. It is interesting to note that students and unemployed people have very low voting rates. This indicates that future analysis might be done to determine why certain demographics have lower voting turnout.
 
 
 
@@ -94,7 +93,7 @@ Looking at the employment status of voters, we can see that the people that vote
 
 ![fig1](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig1.png)
 
-This figure shows the average age of people voting for each ideology. We can see that the average age of Very Conservative and Conservative voters is 55 and 53, respectively, which also seem to be the older people from our dataset. We can also observe that the younger people are, the more likely they are to be Not Sure regarding their ideology, Liberal, and Very Liberal. The average age of Moderate voters falls, as expected, between the averageage of Liberal and Conservative voters.
+This figure shows the average age of people voting for each ideology. We can see that the average age of Very Conservative and Conservative voters is 55 and 53, respectively, which also seem to be the older people from our dataset. We can also observe that the younger people are, the more likely they are to be Not Sure regarding their ideology, Liberal, and Very Liberal. The average age of Moderate voters falls, as expected, between the average of Liberal and Conservative voters.
 
 
 
