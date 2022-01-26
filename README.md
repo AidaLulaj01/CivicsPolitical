@@ -46,16 +46,14 @@ Neural networks are black boxes, meaning we cannot know how much each independen
 It is computationally very expensive and time consuming to train with traditional CPUs.
 Neural networks depend a lot on training data. This leads to the problem of over-fitting and generalization. The mode relies more on the training data and may be tuned to the data.
 
-### Explanation of the Model
+### Explanation of the Model and Evalution
 
-For a classification model like this the Keras sequential model is used. This model is used for the task because of its simplicity to design neural networks and minimal user action. The input layer will have 12 neurons to go hand in hand with the number of features. The first activation stage will use ReLu (Rectified Linear Unit), this activation function is mostly used nowadays due to being a non-linear function and infinite gradient. The hidden layer will have 7 neurons for rule of thumb. The second activation layer will be Softmax, since the output layer will have 5 neurons due to the categorical responses in the feature. Softmax is used because it helps normalize the output and enforce it to be in a limited range. 
+This type of analysis gears towards a classification model, we used the Keras sequential model. This model is used for the task because of its simplicity to design a neural network and minimal user action. The input layer will contain the features that have been used to train the model. To get a better accuracy we will use two hidden layers with activation function Relu (Rectified Linear Unit). ReLu is used due to its simplicity compared to other activation functions, it also takes into account the non-linear relationship between the features selected. To follow suit with another neural analysis that inspired this analysis the first hidden layer will have 148 neurons and the second hidden layer will have 100 neurons. The output layer used was the sigmoid activation function we are trying to predict whether a voter chose one president over another. 
 
 The defined model is now compiled with the following parameters:
-Optimizer parameter is adam, used due to the volume of rows with each feature.
-Loss parameter is sparse_categorical_crossentropy.
-
-Twenty percent of the training set is then used to calculate the validation error of the model training. Now the model is fit with 500 epochs to run the algorithm and will only stop if performance doesn’t increase for 20 continuous epochs.
-
+Optimizer parameter is adam, used due to the volume of data rows within each feature.
+Loss parameter is sparse_categorical_crossentropy because this is a binary classification model after the preprocessing stage. 
+The model is then trained, traditionally neural networks have a high number of epochs, for this analysis we chose 500 epochs to see if we can get a higher accuracy score. Afterwards the model is evaluated, and the loss percentage was 2.22 with an accuracy of 90.4%.  
 
 ### Analysis
 
