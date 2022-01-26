@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Do social characteristics and behavior predict presidential voter choice? We propose the following analysis to find out. We selected this topic because in a politically polarized society, understanding underlying drivers for political decisions may be useful in bringing about a more balanced and cooperative political culture.
+Do social characteristics and behavior predict presidential voter choice? We propose the following analysis to find out. We selected this topic because in a politically polarized society, understanding underlying drivers for political decisions may be useful in bringing about a more balanced and cooperative political culture. The analysis determines if social, fiscal, media-choice, demographic, and other factors are predictive of if a voter cast a ballot for Donald Trump in the 2018 election.
 
 
 ## Data source
