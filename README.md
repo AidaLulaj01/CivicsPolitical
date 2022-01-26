@@ -73,11 +73,11 @@ With this return value the model does a fairly good job of predicting voter pref
 
 ### Analysis
 
-#### Voter Choice
+#### Voter Turnout
 
-![fig3](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig3.png)
+![fig6](https://github.com/AidaLulaj01/CivicsPolitical/blob/1ada794886cab27f910ceabf10a96f1ac70840f5/images/fig6.png)
 
-In this figure, we can see from our data that the largest share of voters, approximately 22,000 people, voted for Hilary Clinton. The second largest share of voters, approximately 19,800 people, voted for Donald Trump. Approximately 4,500 people voted for someone else other than Clinton or Trump, and less than 1,000 people did not vote. Unfortunately, a considerable portion of the data is Not Available. 
+In this figure, we can see from our data that the largest share of voters, approximately 23,000 people, did not vote for Trump.
 
 
 
@@ -85,7 +85,7 @@ In this figure, we can see from our data that the largest share of voters, appro
 
 ![fig4](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig4.png)
 
-Looking at the employment status of voters, we can see that the people that voted the most were full-time employees and retired people. Part-time workers and homemakers ranked third and fourth, respectively. It is interesting to note that students and unemployed people have very low voting rates. This indicates that future analysis might be done to determine why certain demographics have lower voting turnout.
+Looking at the employment status of voters, we can see that the people that voted the most were full-time employees and retired people. Part-time workers and homemakers ranked third and fourth, respectively. It is interesting to note that students and unemployed people have very low voting rates. This indicates that future analysis might be done to determine why certain demographics have lower voting turnout. 
 
 
 
