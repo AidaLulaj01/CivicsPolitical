@@ -24,6 +24,14 @@ The dataframe contains election survey data going back to the year 2006. For the
 
 The database contains a plethora of survey information given from many voters. We decided to choose features from the database that would represent social and political demographics that could sway a voter to choose one candidate over another. The features that were chosen were:  voter’s state, gender, furthest education, race, family income, employment status, marital status, news interest, gauge of presidential approval, political ideology, and lastly the target feature presidential vote.
 
+<img width="838" alt="Screen Shot 2022-01-25 at 11 01 34 PM" src="https://user-images.githubusercontent.com/88690258/151101948-a2a3bd9b-db2b-4028-bcd8-f5eea49e23ea.png">
+
+
+<img width="384" alt="Screen Shot 2022-01-25 at 11 01 49 PM" src="https://user-images.githubusercontent.com/88690258/151101968-c9d329bf-da1d-461b-84a1-2bb02e266b9a.png">
+
+
+
+
 The database did not contain a uniform data type so many of the features that are chosen for the analysis are categorical. We have opted to use a simple neural network to predict voter outcome, but before that some data preprocessing was needed to make the training and test data sets to feed into the machine learning model. Some features contained a significant number of unique values compared to others. To take on this issue we used pandas get dummies function since it turns string columns into multiple numeric value columns. With the features ready they were then split into input features and the target array. A StandardScaler instance was created to transform the data to have its distribution and standard deviation more uniform.
 
 ## Machine Learning Model:
