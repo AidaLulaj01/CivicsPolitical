@@ -20,13 +20,11 @@ The data set is divided then joined along the following parameters from the CSVs
 
 ## Data Exploration
 
-The dataframe contains election survey data going back to the year 2006. For the neural analysis we will be focusing on the year 2018, it holds 60,000 rows and 93 features. Most of the data pertains to voter information, ideological leaning, voter opinion, candidate information, voter choice. 
+The dataframe contains election survey data going back to the year 2006. For the neural analysis we will be focusing on the year 2018, it holds 60,000 rows and 93 features. Most of the data pertains to voter information, ideological leaning, voter opinion, candidate information, and voter choice.
 
-First the dataframe is filtered to the year 2018 and then the following variables 
-For the neural analysis we will be using the following features in a new dataframe: state, district, congress (cong), year of birth (birthyr), age, education (educ), race, family income (faminc), marital status (marstat), news interest (newsint), presidential approval (approval_pres), ideology (ideo5), and lastly presidential vote (voted_pres_16). These features help assess the demographic of the voters.  
+The database contains a plethora of survey information given from many voters. We decided to choose features from the database that would represent social and political demographics that could sway a voter to choose one candidate over another. The features that were chosen were:  voter’s state, gender, furthest education, race, family income, employment status, marital status, news interest, gauge of presidential approval, political ideology, and lastly the target feature presidential vote.
 
-The features that are chosen are mostly categorical, so they are then turned into numeric vectors by one-hot encode. Since we want the model to predict voter’s presidential preference, the feature voted_press16 is removed from the dataframe. Note, that the voted_press16 feature consists of five categories (in accordance with the survey question structure): Voted Trump, Voted Hillary Clinton, Voted Other, Did Not Vote, and Not Sure/Don't Recall.
-The remaining data is then separated into the training set which will have about 90% of data and the test set will have about 10% of the data. 
+The database did not contain a uniform data type so many of the features that are chosen for the analysis are categorical. We have opted to use a simple neural network to predict voter outcome, but before that some data preprocessing was needed to make the training and test data sets to feed into the machine learning model. Some features contained a significant number of unique values compared to others. To take on this issue we used pandas get dummies function since it turns string columns into multiple numeric value columns. With the features ready they were then split into input features and the target array. A StandardScaler instance was created to transform the data to have its distribution and standard deviation more uniform.
 
 ## Machine Learning Model:
 
@@ -48,7 +46,7 @@ Neural networks are black boxes, meaning we cannot know how much each independen
 It is computationally very expensive and time consuming to train with traditional CPUs.
 Neural networks depend a lot on training data. This leads to the problem of over-fitting and generalization. The mode relies more on the training data and may be tuned to the data.
 
-### Explanation of the model
+### Explanation of the Model
 
 For a classification model like this the Keras sequential model is used. This model is used for the task because of its simplicity to design neural networks and minimal user action. The input layer will have 12 neurons to go hand in hand with the number of features. The first activation stage will use ReLu (Rectified Linear Unit), this activation function is mostly used nowadays due to being a non-linear function and infinite gradient. The hidden layer will have 7 neurons for rule of thumb. The second activation layer will be Softmax, since the output layer will have 5 neurons due to the categorical responses in the feature. Softmax is used because it helps normalize the output and enforce it to be in a limited range. 
 
