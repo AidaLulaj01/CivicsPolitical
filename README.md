@@ -24,6 +24,14 @@ The dataframe contains election survey data going back to the year 2006. For the
 
 The database contains a plethora of survey information given from many voters. We decided to choose features from the database that would represent social and political demographics that could sway a voter to choose one candidate over another. The features that were chosen were:  voter’s state, gender, furthest education, race, family income, employment status, marital status, news interest, gauge of presidential approval, political ideology, and lastly the target feature presidential vote.
 
+<img width="838" alt="Screen Shot 2022-01-25 at 11 01 34 PM" src="https://user-images.githubusercontent.com/88690258/151101948-a2a3bd9b-db2b-4028-bcd8-f5eea49e23ea.png">
+
+
+<img width="384" alt="Screen Shot 2022-01-25 at 11 01 49 PM" src="https://user-images.githubusercontent.com/88690258/151101968-c9d329bf-da1d-461b-84a1-2bb02e266b9a.png">
+
+
+
+
 The database did not contain a uniform data type so many of the features that are chosen for the analysis are categorical. We have opted to use a simple neural network to predict voter outcome, but before that some data preprocessing was needed to make the training and test data sets to feed into the machine learning model. Some features contained a significant number of unique values compared to others. To take on this issue we used pandas get dummies function since it turns string columns into multiple numeric value columns. With the features ready they were then split into input features and the target array. A StandardScaler instance was created to transform the data to have its distribution and standard deviation more uniform.
 
 ## Machine Learning Model:
@@ -46,15 +54,22 @@ Neural networks are black boxes, meaning we cannot know how much each independen
 It is computationally very expensive and time consuming to train with traditional CPUs.
 Neural networks depend a lot on training data. This leads to the problem of over-fitting and generalization. The mode relies more on the training data and may be tuned to the data.
 
-### Explanation of the Model
+### Explanation of the Model and Evalution
 
-For a classification model like this the Keras sequential model is used. This model is used for the task because of its simplicity to design neural networks and minimal user action. The input layer will have 12 neurons to go hand in hand with the number of features. The first activation stage will use ReLu (Rectified Linear Unit), this activation function is mostly used nowadays due to being a non-linear function and infinite gradient. The hidden layer will have 7 neurons for rule of thumb. The second activation layer will be Softmax, since the output layer will have 5 neurons due to the categorical responses in the feature. Softmax is used because it helps normalize the output and enforce it to be in a limited range. 
+This type of analysis gears towards a classification model, we used the Keras sequential model. This model is used for the task because of its simplicity to design a neural network and minimal user action. The input layer will contain the features that have been used to train the model. To get a better accuracy we will use two hidden layers with activation function Relu (Rectified Linear Unit). ReLu is used due to its simplicity compared to other activation functions, it also takes into account the non-linear relationship between the features selected. To follow suit with another neural analysis that inspired this analysis the first hidden layer will have 148 neurons and the second hidden layer will have 100 neurons. The output layer used was the sigmoid activation function we are trying to predict whether a voter chose one president over another. 
+
+<img width="562" alt="Screen Shot 2022-01-25 at 10 59 42 PM" src="https://user-images.githubusercontent.com/88690258/151101814-d69d926f-5d76-464b-a857-6f044725e992.png">
+
+
 
 The defined model is now compiled with the following parameters:
-Optimizer parameter is adam, used due to the volume of rows with each feature.
-Loss parameter is sparse_categorical_crossentropy.
+Optimizer parameter is adam, used due to the volume of data rows within each feature.
+Loss parameter is sparse_categorical_crossentropy because this is a binary classification model after the preprocessing stage. 
+The model is then trained, traditionally neural networks have a high number of epochs, for this analysis we chose 500 epochs to see if we can get a higher accuracy score. Afterwards the model is evaluated, and the loss percentage was 2.22 with an accuracy of 90.4%.  
 
-Twenty percent of the training set is then used to calculate the validation error of the model training. Now the model is fit with 500 epochs to run the algorithm and will only stop if performance doesn’t increase for 20 continuous epochs.
+<img width="621" alt="Screen Shot 2022-01-25 at 10 58 34 PM" src="https://user-images.githubusercontent.com/88690258/151101751-02d0ff74-ee9d-496c-b84c-1f14acdaf72e.png">
+
+
 
 
 ### Analysis
