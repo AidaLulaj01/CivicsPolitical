@@ -102,3 +102,6 @@ This figure shows the average age of people voting for each ideology. We can see
 ![fig2](https://github.com/AidaLulaj01/CivicsPolitical/blob/8c8e49a216cdad51930763b06d3d69f041452d0d/images/fig2.png)
 
 In this image, we can see the approval of the president based on each race.
+
+### Presentation slides
+https://docs.google.com/presentation/d/1uR1uyg7Ha2fiDcW7krFO_xvlTzNGH14D/edit#slide=id.p1
