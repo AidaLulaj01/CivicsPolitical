@@ -108,5 +108,5 @@ https://docs.google.com/presentation/d/1uR1uyg7Ha2fiDcW7krFO_xvlTzNGH14D/edit#sl
 
 ### Tableau Dashboard with interactive element
 
-![Tableau Dashboard](https://github.com/AidaLulaj01/CivicsPolitical/blob/51c0b88644022524eab03683c72513bda3b2ed95/images/Tableau%20Dashboard.png)
+![Tableau Dashboard1](https://github.com/AidaLulaj01/CivicsPolitical/blob/1c3416f0af742487955cd902dd81a49e1100a721/images/Tableau%20Dashboard1.png)
 
