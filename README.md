@@ -105,6 +105,8 @@ Tableau link: https://public.tableau.com/app/profile/irina.elena.preotescu/viz/I
 
 In this image, we can see the approval of the president based on each race.
 
+Tableau link: https://public.tableau.com/app/profile/irina.elena.preotescu/viz/Approvalvs_Race/Sheet2?publish=yes 
+
 ### Presentation slides
 https://docs.google.com/presentation/d/1uR1uyg7Ha2fiDcW7krFO_xvlTzNGH14D/edit#slide=id.p1
 
