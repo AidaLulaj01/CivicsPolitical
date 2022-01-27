@@ -79,6 +79,7 @@ With this return value the model does a fairly good job of predicting voter pref
 
 In this figure, we can see from our data that the largest share of voters, approximately 23,000 people, did not vote for Trump.
 
+Tableau link: https://public.tableau.com/app/profile/irina.elena.preotescu/viz/VoterTurnout_16432445072040/Sheet7?publish=yes 
 
 
 #### Employment
