@@ -109,5 +109,7 @@ https://docs.google.com/presentation/d/1uR1uyg7Ha2fiDcW7krFO_xvlTzNGH14D/edit#sl
 
 ### Tableau Dashboard with interactive element
 
+Tableau link: https://public.tableau.com/app/profile/irina.elena.preotescu/viz/Dashboard_16432445885340/Dashboard1?publish=yes 
+
 ![Tableau Dashboard1](https://github.com/AidaLulaj01/CivicsPolitical/blob/1c3416f0af742487955cd902dd81a49e1100a721/images/Tableau%20Dashboard1.png)
 
