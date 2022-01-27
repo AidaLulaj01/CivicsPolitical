@@ -96,6 +96,7 @@ Looking at the employment status of voters, we can see that the people that vote
 
 This figure shows the average age of people voting for each ideology. We can see that the average age of Very Conservative and Conservative voters is 55 and 53, respectively, which also seem to be the older people from our dataset. We can also observe that the younger people are, the more likely they are to be Not Sure regarding their ideology, Liberal, and Very Liberal. The average age of Moderate voters falls, as expected, between the average of Liberal and Conservative voters.
 
+Tableau link: https://public.tableau.com/app/profile/irina.elena.preotescu/viz/Ideologyvs_Age/Sheet3?publish=yes 
 
 
 #### Race vs. President Approval
